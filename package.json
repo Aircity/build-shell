@@ -6,7 +6,8 @@
   "bin": {
     "code": "bin/code.js",
     "npmplease": "bin/npmplease.js",
-    "yarnplease": "bin/yarnplease.js"
+    "yarnplease": "bin/yarnplease.js",
+    "npmlist": "bin/npmlist.js"
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",

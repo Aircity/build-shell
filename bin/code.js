@@ -9,9 +9,6 @@ const { exec } = require('child_process');
 program
   .version(packageJson.version)
   .description('Visual Studio Code')
-  .action(function (dir) {
-    console.log('rmdir %s', dir);
-  });
 
 program
   .command('*')

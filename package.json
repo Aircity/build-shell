@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "code": "bin/code.js"
+    "code": "bin/code.js",
+    "npmplease": "bin/npmplease.js",
+    "yarnplease": "bin/yarnplease.js"
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",

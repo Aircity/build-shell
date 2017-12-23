@@ -7,13 +7,13 @@ const { exec } = require('child_process');
 
 program
   .version(packageJson.version)
-  .description('Visual Studio Code')
+  .description('Sublime Text')
 
 program
   .command('*')
   .action(function (dir) {
-    console.log(`open -a 'Visual Studio Code' ${dir}`);    
-    exec(`open -a 'Visual Studio Code' ${dir}`, (error, stdout, stderr) => {
+    console.log(`open -a 'Sublime Text' ${dir}`);    
+    exec(`open -a 'Sublime Text' ${dir}`, (error, stdout, stderr) => {
       if (error) {
         console.error(`exec error: ${error}`);
         return;

@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "code": "bin/code.js",
+    "vscode": "bin/vscode.js",
     "npmplease": "bin/npmplease.js",
     "yarnplease": "bin/yarnplease.js",
     "npmlist": "bin/npmlist.js",

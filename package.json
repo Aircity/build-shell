@@ -12,9 +12,9 @@
     "subtify": "bin/subtify.js"
   },
   "dependencies": {
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
-    "commander": "^2.12.2",
+    "commander": "^2.19.0",
     "globby": "^9.0.0"
   }
 }

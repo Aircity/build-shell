@@ -2,13 +2,15 @@
 
 const { execSync } = require('child_process');
 const globby = require('globby');
+const path = require('path');
 
-execSync("export http_proxy='http://127.0.0.1:1080'")
-execSync("export https_proxy='http://127.0.0.1:1080'")
-
-const files  = globby.sync(['*.mp4','*.mkv'])
+const files  = globby.sync(['*.mp4','*.mkv','*.webm'])
+const srtFiles  = globby.sync('*.srt')
 
 for (file of files)
 {
-  execSync(`autosub '${file}'`,  {stdio: 'inherit'})
+  let srtName = path.basename(file, path.extname(file))+'.srt'
+  if(!srtFiles.includes(srtName)){
+    execSync(`autosub "${file}"`,  {stdio: 'inherit'})
+  }
 }

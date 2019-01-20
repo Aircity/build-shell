@@ -8,11 +8,13 @@
     "npmplease": "bin/npmplease.js",
     "yarnplease": "bin/yarnplease.js",
     "npmlist": "bin/npmlist.js",
-    "sublime": "bin/sublime.js"
+    "sublime": "bin/sublime.js",
+    "subtify": "bin/subtify.js"
   },
   "dependencies": {
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
-    "commander": "^2.12.2"
+    "commander": "^2.12.2",
+    "globby": "^9.0.0"
   }
 }
